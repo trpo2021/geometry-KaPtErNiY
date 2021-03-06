@@ -25,7 +25,7 @@ vector<float> createTriangle(string& str)
     }
 
     string dataString = "";
-    dataString.append(s, begin);
+    dataString.append(s, begin, s.length()-begin);
 
     if ((dataString[0] == '(') && (dataString[1] == '(')) {
         dataString.erase(0, 2);
@@ -34,7 +34,7 @@ vector<float> createTriangle(string& str)
         return data;
     }
     int count = 0, column = 10;
-    for (int i = 0; i < dataString.length(); i++) {
+    for (int i = 0; i < (int)dataString.length(); i++) {
         string elem = "";
         if (count < 7) {
             if (((dataString[i] < 48) || (dataString[i] > 57))
@@ -104,7 +104,7 @@ int main()
 
         int begin = s.find("(");
 
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < (int)s.length(); i++) {
             s[i] = tolower(s[i]);
         }
 
@@ -131,11 +131,12 @@ int main()
         }
     }
 
-    for (int i = 0; i < figures.size(); i++) {
+    for (int i = 0; i < (int)figures.size(); i++) {
         cout << i + 1 << ". " << figures[i].first << ": ";
-        for (int j = 0; j < figures[i].second.size(); j++) {
+        for (int j = 0; j < (int)figures[i].second.size(); j++) {
             cout << figures[i].second[j] << " ";
         }
         cout << endl;
     }
+    system("PAUSE");
 }
