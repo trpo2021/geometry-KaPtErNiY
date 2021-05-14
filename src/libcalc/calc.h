@@ -1,4 +1,5 @@
 #pragma once
+#pragma once
 
 #include <geometry/struct.h>
 #include <string>
