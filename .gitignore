@@ -11,6 +11,7 @@
 *.gch
 *.pch
 
+<<<<<<< HEAD
 # Compiled Dynamic libraries
 *.so
 *.dylib
@@ -30,3 +31,8 @@
 *.exe
 *.out
 *.app
+=======
+.vs
+
+*.exe
+>>>>>>> 5cec24b4f76767ccb25f4db0c716b4c26d397239
