@@ -1,4 +1,4 @@
-CXX=g++
+CXX=gсс
 CFLAGS= -c -Wall -Werror
 CPPFLAGS_TEST = -Wall -Wextra -Werror -I thirdparty -I src -MP -MMD
 LIBI = obj/src/libin
